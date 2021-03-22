@@ -64,7 +64,7 @@ function Menu(userService, $state, $rootScope) {
                             name: 'home.home',
                             type: 'link',
                             state: 'home.links',
-                            icon: 'mdi'
+                            icon: 'home'
                         },
                         {
                             name: 'tenant.tenants',
