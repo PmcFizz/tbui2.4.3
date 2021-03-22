@@ -182,8 +182,8 @@
         "any-relation": "不限"
     },
     "asset": {
-        "asset": "资产",
-        "assets": "资产",
+        "asset": "生产设备管理",
+        "assets": "生产设备管理",
         "management": "资产管理",
         "view-assets": "查看资产",
         "add": "添加资产",
@@ -557,9 +557,9 @@
         "toggle-edit-mode": "切换编辑模式"
     },
     "device": {
-        "device": "设备",
+        "device": "生产零部件管理",
         "device-required": "设备必填",
-        "devices": "设备",
+        "devices": "生产零部件管理",
         "management": "设备管理",
         "view-devices": "查看设备",
         "device-alias": "设备别名",
@@ -1177,7 +1177,7 @@
     },
     "rulechain": {
         "rulechain": "规则链",
-        "rulechains": "规则链库",
+        "rulechains": "设备数据处理",
         "root": "根实体",
         "delete": "删除规则",
         "activate": "激活规则",
@@ -1380,7 +1380,7 @@
         "long": "Long"
     },
     "widget": {
-        "widget-library": "部件库",
+        "widget-library": "图表部件管理",
         "widget-bundle": "部件包",
         "select-widgets-bundle": "选择部件包",
         "management": "管理部件",
@@ -1615,7 +1615,7 @@
             "tr_TR": "土耳其",
             "fa_IR": "波斯语",
             "uk_UA": "乌克兰",
-            "cs_CZ": "在捷克"            
+            "cs_CZ": "在捷克"
         }
     }
 }

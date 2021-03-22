@@ -41,7 +41,7 @@ export default function AppConfig($provide,
     $locationProvider.html5Mode(true);
     $urlRouterProvider.otherwise(UrlHandler);
     storeProvider.setCaching(false);
-    
+
     $translateProvider.useSanitizeValueStrategy(null)
                       .useMissingTranslationHandler('tbMissingTranslationHandler')
                       .addInterpolation('$translateMessageFormatInterpolation')
@@ -54,9 +54,9 @@ export default function AppConfig($provide,
                           ]
                       })
                       .registerAvailableLanguageKeys(SUPPORTED_LANGS, getLanguageAliases(SUPPORTED_LANGS)) //eslint-disable-line
-                      .fallbackLanguage('en_US') // must be before determinePreferredLanguage   
+                      .fallbackLanguage('en_US') // must be before determinePreferredLanguage
                       .uniformLanguageTag('java')  // must be before determinePreferredLanguage
-                      .determinePreferredLanguage();                
+                      .determinePreferredLanguage();
 
     $httpProvider.interceptors.push('globalInterceptor');
 
@@ -155,7 +155,7 @@ export default function AppConfig($provide,
         var aliases = {};
 
         supportedLangs.sort().forEach(function(item, index, array) {
-            if (item.length === 2) { 
+            if (item.length === 2) {
                 aliases[item] = item;
                 aliases[item + '_*'] = item;
             } else {
@@ -168,7 +168,7 @@ export default function AppConfig($provide,
                 }
             }
         });
-        
+
         return aliases;
     }
 }

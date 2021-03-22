@@ -15,6 +15,15 @@
  */
 @import "../../scss/constants";
 
+.login-page {
+  background-image: url("../../png/jstree/bg1.jpg");
+  background-size: cover;
+
+  md-card.md-tb-dark-theme {
+    background-color: #30568080;
+  }
+}
+
 md-card.tb-login-card {
   width: 330px !important;
 

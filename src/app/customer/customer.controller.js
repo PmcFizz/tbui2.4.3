@@ -35,48 +35,48 @@ export default function CustomerController(customerService, $state, $stateParams
                 return customer && (!customer.additionalInfo || !customer.additionalInfo.isPublic);
             }
         },
-        {
-            onAction: function ($event, item) {
-                openCustomerAssets($event, item);
-            },
-            name: function() { return $translate.instant('asset.assets') },
-            details: function(customer) {
-                if (customer && customer.additionalInfo && customer.additionalInfo.isPublic) {
-                    return $translate.instant('customer.manage-public-assets')
-                } else {
-                    return $translate.instant('customer.manage-customer-assets')
-                }
-            },
-            icon: "domain"
-        },
-        {
-            onAction: function ($event, item) {
-                openCustomerDevices($event, item);
-            },
-            name: function() { return $translate.instant('device.devices') },
-            details: function(customer) {
-                if (customer && customer.additionalInfo && customer.additionalInfo.isPublic) {
-                    return $translate.instant('customer.manage-public-devices')
-                } else {
-                    return $translate.instant('customer.manage-customer-devices')
-                }
-            },
-            icon: "devices_other"
-        },
-        {
-            onAction: function ($event, item) {
-                openCustomerDashboards($event, item);
-            },
-            name: function() { return $translate.instant('dashboard.dashboards') },
-            details: function(customer) {
-                if (customer && customer.additionalInfo && customer.additionalInfo.isPublic) {
-                    return $translate.instant('customer.manage-public-dashboards')
-                } else {
-                    return $translate.instant('customer.manage-customer-dashboards')
-                }
-            },
-            icon: "dashboard"
-        },
+        // {
+        //     onAction: function ($event, item) {
+        //         openCustomerAssets($event, item);
+        //     },
+        //     name: function() { return $translate.instant('asset.assets') },
+        //     details: function(customer) {
+        //         if (customer && customer.additionalInfo && customer.additionalInfo.isPublic) {
+        //             return $translate.instant('customer.manage-public-assets')
+        //         } else {
+        //             return $translate.instant('customer.manage-customer-assets')
+        //         }
+        //     },
+        //     icon: "domain"
+        // },
+        // {
+        //     onAction: function ($event, item) {
+        //         openCustomerDevices($event, item);
+        //     },
+        //     name: function() { return $translate.instant('device.devices') },
+        //     details: function(customer) {
+        //         if (customer && customer.additionalInfo && customer.additionalInfo.isPublic) {
+        //             return $translate.instant('customer.manage-public-devices')
+        //         } else {
+        //             return $translate.instant('customer.manage-customer-devices')
+        //         }
+        //     },
+        //     icon: "devices_other"
+        // },
+        // {
+        //     onAction: function ($event, item) {
+        //         openCustomerDashboards($event, item);
+        //     },
+        //     name: function() { return $translate.instant('dashboard.dashboards') },
+        //     details: function(customer) {
+        //         if (customer && customer.additionalInfo && customer.additionalInfo.isPublic) {
+        //             return $translate.instant('customer.manage-public-dashboards')
+        //         } else {
+        //             return $translate.instant('customer.manage-customer-dashboards')
+        //         }
+        //     },
+        //     icon: "dashboard"
+        // },
         {
             onAction: function ($event, item) {
                 vm.grid.deleteItem($event, item);

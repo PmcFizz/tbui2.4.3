@@ -76,7 +76,7 @@ module.exports = {
         new HtmlWebpackPlugin({
             template: './src/index.html',
             filename: 'index.html',
-            title: 'ThingsBoard',
+            title: '生产线智能监管',
             inject: 'body',
         }),
         new StyleLintPlugin(),

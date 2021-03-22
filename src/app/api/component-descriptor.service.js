@@ -39,7 +39,7 @@ function ComponentDescriptorService($http, $q) {
         } else {
             var url = '/api/components/' + componentType;
             $http.get(url, null).then(function success(response) {
-                componentsByType[componentType] = response.data;
+                componentsByType[componentType] = response.data
                 for (var i = 0; i < componentsByType[componentType].length; i++) {
                     var component = componentsByType[componentType][i];
                     componentsByClazz[component.clazz] = component;
@@ -68,7 +68,11 @@ function ComponentDescriptorService($http, $q) {
         } else {
             var url = '/api/components?componentTypes=' + componentTypes.join(',');
             $http.get(url, null).then(function success(response) {
-                var components = response.data;
+                var notNode = ['aws sns', 'aws sqs', 'gcp pubsub', 'send email', 'gps geofencing filter', 'gps geofencing events']
+                var components = response.data.filter(x => {
+                    return !notNode.includes(x.name)
+                });
+
                 for (var i = 0; i < components.length; i++) {
                     var component = components[i];
                     var componentsList = componentsByType[component.type];
