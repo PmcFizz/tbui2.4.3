@@ -155,12 +155,6 @@ function Menu(userService, $state, $rootScope) {
                             icon: 'home'
                         },
                         {
-                            name: 'rulechain.rulechains',
-                            type: 'link',
-                            state: 'home.ruleChains',
-                            icon: 'settings_ethernet'
-                        },
-                        {
                             name: 'customer.customers',
                             type: 'link',
                             state: 'home.customers',
@@ -178,6 +172,12 @@ function Menu(userService, $state, $rootScope) {
                             state: 'home.devices',
                             icon: 'devices_other'
                         },
+                        {
+                            name: 'rulechain.rulechains',
+                            type: 'link',
+                            state: 'home.ruleChains',
+                            icon: 'settings_ethernet'
+                        },
                         // {
                         //     name: 'entity-view.entity-views',
                         //     type: 'link',
@@ -185,16 +185,16 @@ function Menu(userService, $state, $rootScope) {
                         //     icon: 'view_quilt'
                         // },
                         {
-                            name: 'widget.widget-library',
-                            type: 'link',
-                            state: 'home.widgets-bundles',
-                            icon: 'now_widgets'
-                        },
-                        {
                             name: 'dashboard.dashboards',
                             type: 'link',
                             state: 'home.dashboards',
                             icon: 'dashboards'
+                        },
+                        {
+                            name: 'widget.widget-library',
+                            type: 'link',
+                            state: 'home.widgets-bundles',
+                            icon: 'now_widgets'
                         },
                         {
                             name: 'audit-log.audit-logs',
